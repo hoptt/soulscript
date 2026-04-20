@@ -25,7 +25,7 @@ export const portfolioData: PortfolioItem[] = [
     title: "Chicks Fly",
     description: `개인 프로젝트로 제작한 3D 멀티플레이 SNS 플랫폼입니다.\nReact 와 Vite 를 사용하여 빠른 테스트 및 개발을 진행했으며,\nThree.js 와 React-three-fiber 를 사용하여 3D 그래픽을 구현했습니다.\nSocket.io 를 사용하여 실시간 동기화를 구현했으며,\nPrisma와 Supabase를 통해 데이터를 관리했습니다.`,
     techStack:
-      "React, Vite, TypeScript, Three.js, R3F, Socket.io, Prisma, Supabase...",
+      "React, Vite, TypeScript, Three.js, R3F, Socket.io, Prisma, Supabase..",
     websiteLink: "https://chicksfly.com",
     githubLink: "https://github.com/hoptt/chicks",
     images: [
@@ -39,7 +39,7 @@ export const portfolioData: PortfolioItem[] = [
     type: "숙박 예약 플랫폼",
     title: "Resort BnB",
     description: `개인 프로젝트로 제작한 간단한 숙소 등록 및 예약 플랫폼입니다.\nReact와 Next.js를 사용하여 동적이고 반응성 높은 UI를 구현했으며,\nPrisma와 Supabase를 통해 데이터를 관리했습니다.`,
-    techStack: "React, Next.js, TypeScript, TailwindCSS, Prisma, Supabase...",
+    techStack: "React, Next.js, TypeScript, TailwindCSS, Prisma, Supabase..",
     websiteLink: "https://resortbnb.vercel.app",
     githubLink: "https://github.com/hoptt/resortbnb",
     images: [
@@ -54,7 +54,7 @@ export const portfolioData: PortfolioItem[] = [
     title: "iPhone 15 Pro MAX",
     description: `iPhone 15 Pro Max 를 클론코딩한 프로젝트입니다.\niPhone Pro 15 사이트의 디자인적 요소와 인터랙티브한 요소들을 배워보고자 클론 코딩을 진행하였습니다.`,
     techStack:
-      "React, Next.js, TypeScript, TailwindCSS, Three.js, gsap, Framer-motion...",
+      "React, Next.js, TypeScript, TailwindCSS, Three.js, gsap, Framer-motion..",
     websiteLink: "https://i-phone-15pro-clone.vercel.app/",
     githubLink: "https://github.com/hoptt/iPhone-15pro-clone",
     images: [
@@ -69,7 +69,7 @@ export const portfolioData: PortfolioItem[] = [
     title: "DueCast",
     description: `AI 를 활용하여 제작한 날씨 플랫폼입니다.\nClaude Code로 PRD를 수립하고 MVP를 신속히 개발했으며\n로드맵 기반으로 작업을 단계화한 뒤\nShrimp Task Manager 를 활용해 체계적으로 실행하여 AI 의 코드 완성도를 향상시켰습니다.`,
     techStack:
-      "Claude Code, React, Nextjs, TypeScript, TailwindCSS, Framer-motion, OpenWeatherMap API...",
+      "Claude Code, React, Nextjs, TypeScript, TailwindCSS, Framer-motion, OpenWeatherMap API..",
     websiteLink: "https://www.duecast.com",
     githubLink: "https://github.com/hoptt/duecast_v2",
     images: ["/assets/images/duecast1.webp","/assets/images/duecast1_flutter.webp","/assets/images/duecast2.webp","/assets/images/duecast2_flutter.webp"],
