@@ -31,6 +31,7 @@ export const SKILLS_DATA: SkillItem[] = [
   { name: "React", icon: "/assets/images/icon1.webp", category: "Library" },
   { name: "React Query", category: "Library" },
   { name: "TailwindCSS", category: "Library" },
+  { name: "Styled-Component", category: "Library" },
   { name: "Zustand", category: "Library" },
   { name: "Recoil", category: "Library" },
   { name: "Nx monorepo", category: "Library" },

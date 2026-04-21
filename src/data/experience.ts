@@ -120,6 +120,12 @@ export const EXPERIENCE_DATA: ExperienceData[] = [
           "다양한 데이터 관리 기능을 통합 제공함으로써, 복잡한 데이터를 손쉽게 추적하고 분석할 수 있는 환경을 마련하였습니다.",
         ],
       },
+      {
+        title: "기술 경험 및 성능 개선",
+        items: [
+          "B2C 커머스에서 좋아요처럼 사용자가 반복적으로 수행하는 액션은 네트워크 응답을 기다리는 순간 체감 반응성이 떨어져 이탈로 이어질 수 있다고 생각하였고, 이를 개선하기 위해 TanStack Query의 onMutate에서 쿼리 캐시를 선반영하고, onError에서 이전 스냅샷으로 롤백, onSettled에서 invalidateQueries로 서버 상태와 재동기화하는 낙관적 업데이트 패턴을 도입하여 UX 개선을 하였습니다.",
+        ],
+      },
     ],
     tools: [
       { name: "Miro", description: "와이어프레임 및 아이디어 공유" },

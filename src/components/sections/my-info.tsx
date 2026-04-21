@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { motion, useInView } from "framer-motion";
 import { ExperienceCard } from "./experience-card";
 import { EXPERIENCE_DATA } from "@/data/experience";
 import ScrollReveal from "@/components/common/scroll-reveal";
@@ -21,6 +22,8 @@ function getTotalCareerDuration(): string {
 export default function MyInfo() {
   const [openIndices, setOpenIndices] = useState<Set<number>>(() => new Set([0]));
   const totalDuration = getTotalCareerDuration();
+  const timelineLineRef = useRef<HTMLDivElement>(null);
+  const timelineLineInView = useInView(timelineLineRef, { once: true, margin: "-50px 0px" });
 
   const handleToggle = (index: number) => {
     setOpenIndices((prev) => {
@@ -56,7 +59,13 @@ export default function MyInfo() {
         {/* 타임라인 + 경력 카드 */}
         <div className="relative pl-4 sm:pl-6">
           {/* 타임라인 세로선 */}
-          <div className="absolute left-0 top-2 bottom-2 w-px bg-gradient-to-b from-amber-400/40 via-amber-400/20 to-transparent" />
+          <motion.div
+            ref={timelineLineRef}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: timelineLineInView ? 1 : 0 }}
+            transition={{ duration: 0.6, delay: 0.15, ease: "easeOut" }}
+            className="absolute left-0 top-2 bottom-2 w-px bg-gradient-to-b from-amber-400/40 via-amber-400/20 to-transparent"
+          />
 
           {EXPERIENCE_DATA.map((exp, index) => (
             <ScrollReveal key={index} delay={index * 0.1} direction="up">

@@ -158,19 +158,6 @@ export default function Hero() {
                   sizes="(max-width: 640px) 128px, (max-width: 1024px) 144px, 176px"
                 />
               </div>
-
-              {/* 상태 배지 */}
-              <motion.div
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: 0.5 }}
-                className="absolute -bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-1.5 px-3 py-1 bg-gray-800 border border-gray-700 rounded-full whitespace-nowrap shadow-lg"
-              >
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                <span className="text-xs font-mono text-gray-400">
-                  Open to work
-                </span>
-              </motion.div>
             </div>
           </motion.div>
         </div>
