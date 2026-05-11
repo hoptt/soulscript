@@ -43,7 +43,7 @@ export default function MyInfo() {
         {/* 섹션 넘버링 */}
         <ScrollReveal delay={0} direction="up">
           <div className="flex items-center gap-3 mb-10">
-            <span className="font-mono text-sm text-amber-400/40 tracking-widest select-none">02</span>
+            <span className="font-mono text-sm text-amber-400/40 tracking-widest select-none">03</span>
             <div className="h-px w-12 bg-amber-400/30" />
             <span className="font-mono text-xs text-amber-400/40 tracking-widest uppercase select-none">{"// experience"}</span>
           </div>

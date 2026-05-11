@@ -244,7 +244,7 @@ export default function PortfolioCarousel() {
         <ScrollReveal delay={0} direction="up">
           <div className="flex items-center gap-3 mb-10">
             <span className="font-mono text-sm text-amber-400/40 tracking-widest select-none">
-              04
+              05
             </span>
             <div className="h-px w-12 bg-amber-400/30" />
             <span className="font-mono text-xs text-amber-400/40 tracking-widest uppercase select-none">
@@ -254,16 +254,11 @@ export default function PortfolioCarousel() {
         </ScrollReveal>
 
         <ScrollReveal delay={0.05} direction="up">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-200 mb-10">
-            개인 포트폴리오
-          </h2>
-        </ScrollReveal>
-
-        {/* 캐러셀 */}
-        <ScrollReveal delay={0.1} direction="up">
-          <div>
-            {/* 네비게이션 컨트롤 */}
-            <div className="flex items-center gap-3 mb-4">
+          <div className="flex items-center justify-between gap-3 mb-6 lg:mb-10">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-200">
+              개인 포트폴리오
+            </h2>
+            <div className="relative lg:top-7 flex items-center gap-2 sm:gap-3 flex-shrink-0">
               <button
                 onClick={goToPrev}
                 className="p-2 bg-gray-800 rounded-full shadow-md hover:bg-gray-700 focus:outline-none focus:ring-1 focus:ring-amber-400/50 dark:bg-gray-700 dark:hover:bg-gray-600 transition-colors duration-200"
@@ -282,7 +277,12 @@ export default function PortfolioCarousel() {
                 <MdArrowForwardIos className="text-lg text-gray-300" />
               </button>
             </div>
+          </div>
+        </ScrollReveal>
 
+        {/* 캐러셀 */}
+        <ScrollReveal delay={0.1} direction="up">
+          <div>
             {/* 프로젝트 카드 */}
             <AnimatePresence mode="wait">
               <motion.div

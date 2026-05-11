@@ -14,6 +14,7 @@ export const ExperienceCard = ({
   description,
   duration,
   additionalInfo,
+  team,
   partners,
   contributions,
   achievements,
@@ -87,6 +88,28 @@ export const ExperienceCard = ({
       >
         <div className="px-4 sm:px-6 pb-4 sm:pb-6">
           <div className="pt-4 space-y-5">
+
+                {/* 협업 규모 */}
+                {team && team.length > 0 && (
+                  <div>
+                    <div className="flex items-center gap-2 mb-2">
+                      <span className="font-mono text-xs text-amber-400/60">{"["}</span>
+                      <span className="font-mono text-xs text-amber-400/80 tracking-wider uppercase">TEAM</span>
+                      <span className="font-mono text-xs text-amber-400/60">{"]"}</span>
+                      <div className="flex-1 h-px bg-gray-800 ml-1" />
+                    </div>
+                    <div className="flex flex-wrap gap-1.5">
+                      {team.map((item, i) => (
+                        <span
+                          key={i}
+                          className="px-2 py-0.5 rounded border border-gray-800 bg-gray-800/30 font-mono text-xs text-gray-500"
+                        >
+                          {item}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                )}
 
                 {/* 주요 협력사 */}
                 {partners && partners.length > 0 && (

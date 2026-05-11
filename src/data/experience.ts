@@ -12,6 +12,7 @@ export interface ExperienceData {
   description: string;
   duration: string;
   additionalInfo?: string;
+  team?: string[];
   partners?: string[];
   contributions: { title: string; items: string[] }[];
   achievements?: Achievement[];
@@ -26,6 +27,7 @@ export const EXPERIENCE_DATA: ExperienceData[] = [
     duration: "2024.11 ~ 2025.11 (1년 1개월)",
     additionalInfo:
       "프로젝트들은 다국어(i18n)를 적용하여 다양한 언어에 대비해 개발했습니다.",
+    team: ["총 인원 100명", "개발자 10명"],
     partners: ["KB국민은행", "하나은행", "삼성화재", "카카오페이", "삼쩜삼"],
     contributions: [
       {
@@ -97,6 +99,7 @@ export const EXPERIENCE_DATA: ExperienceData[] = [
     duration: "2021.12 ~ 2024.01 (2년 2개월)",
     additionalInfo:
       "폴리레포 환경에서 웹 및 앱 웹뷰 형태로 서비스를 제공하고, Storybook을 활용하여 효율적으로 컴포넌트를 관리했습니다.",
+    team: ["총 인원 10명", "개발자 3명"],
     partners: [],
     contributions: [
       {

@@ -60,7 +60,7 @@ export default function Footer() {
               <span className="w-7 h-7 flex items-center justify-center rounded bg-gray-800 group-hover:bg-amber-400/10 transition-colors duration-200">
                 <BsFillTelephoneFill className="text-xs" />
               </span>
-              <span className="text-sm font-mono">010-4576-9690</span>
+              <span className="text-sm">010-4576-9690</span>
             </a>
             <div className="flex items-center gap-2">
               <a
